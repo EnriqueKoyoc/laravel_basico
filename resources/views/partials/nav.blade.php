@@ -9,13 +9,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="{{ setActive('home') }}" aria-current="page" href="/">{{ __('Home') }}</a>
+                    <a class="{{ setActive('home') }}" aria-current="page"
+                        href="{{ route('home') }}">{{ __('Home') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="{{ setActive('about') }}" href="/about">{{ __('About') }}</a>
+                    <a class="{{ setActive('about') }}" href="{{ route('about') }}">{{ __('About') }}</a>
                 </li>
                 <li>
-                    <a class="{{ setActive('portfolio') }}" href="/portfolio">{{ __('Portfolio') }}</a>
+                    <a class="{{ setActive('projects.*') }}"
+                        href="{{ route('projects.index') }}">{{ __('Projects') }}</a>
                 </li>
                 <li>
                     <a class="{{ setActive('contact') }}" href="/contact">{{ __('Contact') }}</a>

@@ -7,7 +7,7 @@
     <h1>{{ __('Contact')}}</h1>
 </center>
 <div class="col-md-6 mx-auto">
-    <form action="{{ route('contact') }}" method="post">
+    <form action="{{ route('messages.store') }}" method="post">
         @csrf
         <div class="form-group">
             <label>Nombre</label>
